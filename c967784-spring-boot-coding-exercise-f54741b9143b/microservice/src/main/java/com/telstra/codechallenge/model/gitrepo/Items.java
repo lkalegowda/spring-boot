@@ -5,10 +5,11 @@ import lombok.Data;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
+@JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
 public class Items {
     private String name;
     private String description;
     private String language;
-    private String watchers_count;
-    private String html_url;
+    private String watchersCount;
+    private String htmlUrl;
 }
