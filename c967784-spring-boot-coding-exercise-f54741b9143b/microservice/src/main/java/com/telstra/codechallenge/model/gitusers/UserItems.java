@@ -5,8 +5,9 @@ import lombok.Data;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
+@JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
 public class UserItems {
     private String id;
     private String login;
-    private String html_url;
+    private String htmlUrl;
 }
