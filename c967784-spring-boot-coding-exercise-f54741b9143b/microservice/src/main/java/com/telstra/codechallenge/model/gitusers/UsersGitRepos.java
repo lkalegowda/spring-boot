@@ -6,7 +6,6 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
 public class UsersGitRepos {
-  private int total_count;
-  private boolean incompleteResults;
   private UserItems items[];
 }
+
