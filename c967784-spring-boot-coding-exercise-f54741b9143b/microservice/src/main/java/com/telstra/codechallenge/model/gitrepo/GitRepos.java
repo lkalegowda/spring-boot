@@ -8,8 +8,6 @@ import lombok.Setter;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
 public class GitRepos {
-  private int total_count;
-  private boolean incompleteResults;
   @Getter @Setter
   private Items items[];
 }
